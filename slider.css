@@ -1,0 +1,35 @@
+.slider {
+    position: relative;
+    max-width: 500px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons a {
+    display: inline-block;
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
+.buttons a.active {
+    background-color: #fff; /* Change the color of the active button */
+}
